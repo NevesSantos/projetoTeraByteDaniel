@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.accounts{
+    font-size: 0.7em;
+    font-weight: bold;
+    display: flex;
+}
+
+.a-accounts {
+    vertical-align: middle;
+    color: #fff;
+    text-decoration: none;
+}
+
+.a-sm{
+    color: #fff;
+    text-decoration: none;
+}
+
+.p-account {
+    padding: 0.2em 1em 0 1em;
+}
+
+.fa-brands {
+    margin: 0;
+    font-size: 0.8em;
+    padding: 0 0.6em 0.4em 0.6em;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 15vw;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.fa-bars{
+    height: 100%;
+    margin: auto 0;
+    font-size: 2em;
+}
+
+.img-header {
+    width: 140.2px;
+    height: 65px;
+    background-image: url("../../imgTeraByte/terabyte-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div-input-header {
+    width: 50%;
+    height: 45px;
+    margin: auto 0;
+    background-color: #fff;
+    color: #222;
+    border-radius: 10px;
+    display: flex;
+}
+
+.input-header {
+    height: 100%;
+    width: 93%;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5em;
+    padding-left: 0.8em;
+    outline: none;
+}
+
+.icon-search {
+    margin: auto;
+}
+
+.entre {
+    margin: auto 0;
+}
+
+.login {
+    text-align: center;
+    font-size: .8em;
+}
+
+.fa-cart-shopping {
+    margin: auto 0;
+    font-size: 1.4em;
+}
+
+.div-slider {
+    height: 14vw;
+    background-image: url("../../imgTeraByte/destaques/01-vote-terabyte-info-e-comerce.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
