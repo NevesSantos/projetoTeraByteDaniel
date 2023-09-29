@@ -10,6 +10,7 @@ function inserirProduto(produto) {
     var colImg = document.createElement('td');
     var colDesc = document.createElement('td');
     var colPreco = document.createElement('td');
+    var ColTipo = document.createElement('td');
     var colSelect = document.createElement('td');
 
     colId.classList.add('col-id');
@@ -27,6 +28,13 @@ function inserirProduto(produto) {
     colPreco.classList.add('col-preco')
     colPreco.innerText = "R$ " + produto.preco;
 
+    ColTipo.classList.add('col-tipo')
+    if(produto.tipo === 1){
+        ColTipo.innerText = "Mais Vendidos";
+    }else if(produto.tipo === 2){
+        ColTipo.innerText = "Lançamentos";
+    }
+
     var btnSelect = document.createElement('button');
     btnSelect.classList.add("btn", "btn-success");
     btnSelect.innerText = "Selecionar";
@@ -36,6 +44,7 @@ function inserirProduto(produto) {
     novalinha.appendChild(colImg);
     novalinha.appendChild(colDesc);
     novalinha.appendChild(colPreco);
+    novalinha.appendChild(ColTipo);
     novalinha.appendChild(colSelect);
 
     document.querySelector('tbody').appendChild(novalinha);

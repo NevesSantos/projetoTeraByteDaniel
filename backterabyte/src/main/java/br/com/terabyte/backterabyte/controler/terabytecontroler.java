@@ -31,20 +31,22 @@ public class terabytecontroler {
 
     @PostMapping
     public ResponseEntity<terabytemodel> cadastrar(@RequestParam("img") MultipartFile img,
-    @RequestParam("description") String description, @RequestParam("preco") Double preco)
-     {
-        try{
+            @RequestParam("description") String description, @RequestParam("preco") Double preco,
+            @RequestParam("tipo") Integer tipo) {
+        try {
             byte[] imgBytes = img.getBytes();
             terabytemodel model = new terabytemodel();
             model.setDescription(description);
             model.setImg(imgBytes);
             model.setPreco(preco);
+            model.setTipo(tipo);
             return new ResponseEntity<terabytemodel>(repo.save(model), HttpStatus.CREATED);
-        
-        }catch (Exception e){
+
+        } catch (Exception e) {
             return null;
         }
-     }        
+    }
+
     @PutMapping
     public ResponseEntity<terabytemodel> alterar(@RequestBody terabytemodel model) {
         return new ResponseEntity<terabytemodel>(repo.save(model), HttpStatus.CREATED);

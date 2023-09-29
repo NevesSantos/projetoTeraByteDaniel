@@ -24,5 +24,6 @@ public class terabytemodel {
     private byte[] img;
     private String description;
     private Double preco;
+    private Integer tipo;
 
 }

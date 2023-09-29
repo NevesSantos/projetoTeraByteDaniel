@@ -13,10 +13,11 @@
 
 
     <link rel="stylesheet" href="/front/css/cadastrar.css">
+    <script src="/front/js tabela cadastrar/variaveis.js" defer></script>
     <script src="/front/js tabela cadastrar/preenchertabela.js" defer></script>
     <script src="/front/js tabela cadastrar/get.js" defer></script>
     <script src="/front/js tabela cadastrar/post.js" defer></script>
-    
+
     <title>Cadastrar Produtos</title>
 </head>
 
@@ -27,7 +28,14 @@
         <input type="file" name="img" id="img" class="form-control">
         <input type="text" name="description" id="description" placeholder="Descrição do produto" class="form-control">
         <input type="number" name="preco" id="preco" placeholder="Preço do produto" class="form-control">
+        <div>
+            <input type="radio" name="tipo" value="1">
+            <label for="maisvendidos">Mais vendidos</label>
+            <input type="radio" name="tipo" value="2">
+            <label for="lancamentos">Lançamentos</label>
+        </div>
         <input type="submit" value="Cadastrar" class="btn btn-primary">
+        <input type="button" value="Terabyte" id="terabyte" class="btn btn-dark">
 
 
     </form>
