@@ -31,19 +31,17 @@ function listarProdutos(produtos) {
 
         if (p.tipo === 1) {
             document.getElementById("maisvendidos").appendChild(inserirProduto(p));
-       
+
         } else if (p.tipo === 2) {
             document.getElementById("lancamentos").appendChild(inserirProduto(p));
         }
-    
+
     })
 }
 
 function inserirProduto(p) {
-    var divProdutos = document.querySelector(".div-produtos");
     var divProduto = document.createElement("div");
     divProduto.classList.add("div-produto");
-
 
     var img = document.createElement("img");
     img.src = "data:img/jpg;base64," + p.img;
@@ -51,7 +49,6 @@ function inserirProduto(p) {
     img.classList.add("div-img-produto")
     divProduto.appendChild(img);
 
-    var infoProduto = document.createElement("div");
 
     var textDescription = document.createElement("div");
     textDescription.classList.add("p-descri-produto");
@@ -61,30 +58,28 @@ function inserirProduto(p) {
     var text1 = document.createElement("div");
     text1.classList.add("p-valor");
     text1.innerHTML = 'de <s>R$ ' + (p.preco).toFixed(2) + '</s> por:';
-    infoProduto.appendChild(text1);
+    divProduto.appendChild(text1);
 
     var text3 = document.createElement("div");
     text3.classList.add("p-a-vista");
     text3.innerText = "R$ " + (p.preco * 0.90).toFixed(2);
-    infoProduto.appendChild(text3);
+    divProduto.appendChild(text3);
 
     var text2 = document.createElement("div");
     text2.classList.add("p-a-vista", "span-a-vista");
     text2.innerText = "à vista";
-    infoProduto.appendChild(text2);
+    divProduto.appendChild(text2);
 
     var text4 = document.createElement("div");
     text4.classList.add("p-parcelado");
     text4.innerHTML = '12x de <span class="vermelho">R$ ' + (p.preco / 12).toFixed(2) + '</span>';
-    infoProduto.appendChild(text4);
+    divProduto.appendChild(text4);
 
     var text6 = document.createElement("div");
     text6.classList.add("p-parcelado");
     text6.innerText = "sem juros no cartão";
-    infoProduto.appendChild(text6);
-
-    divProduto.appendChild(infoProduto);
-    divProdutos.appendChild(divProduto);
+    divProduto.appendChild(text6);
+    return divProduto;
 }
 
 getDadosJson();
