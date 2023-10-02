@@ -16,7 +16,10 @@
     <script src="/front/js tabela cadastrar/variaveis.js" defer></script>
     <script src="/front/js tabela cadastrar/preenchertabela.js" defer></script>
     <script src="/front/js tabela cadastrar/get.js" defer></script>
+    <script src="/front/js tabela cadastrar/funcoesglobais.js" defer></script>
     <script src="/front/js tabela cadastrar/post.js" defer></script>
+    <script src="/front/js tabela cadastrar/select.js" defer></script>
+    <script src="/front/js tabela cadastrar/delete.js" defer></script>
 
     <title>Cadastrar Produtos</title>
 </head>
@@ -24,19 +27,21 @@
 <body>
     <h1>CADASTRAR PRODUTOS</h1>
     <form>
-
+        <input type="text" id="id" class="hidden">
         <input type="file" name="img" id="img" class="form-control">
         <input type="text" name="description" id="description" placeholder="Descrição do produto" class="form-control">
-        <input type="number" name="preco" id="preco" placeholder="Preço do produto" class="form-control">
+        <input type="text" name="preco" id="preco" placeholder="Preço do produto" class="form-control">
         <div>
-            <input type="radio" name="tipo" value="1">
+            <input type="radio" name="tipo" value="1" id="maisvendidos">
             <label for="maisvendidos">Mais vendidos</label>
-            <input type="radio" name="tipo" value="2">
+            <input type="radio" name="tipo" value="2" id="lancamentos">
             <label for="lancamentos">Lançamentos</label>
         </div>
-        <input type="submit" value="Cadastrar" class="btn btn-primary">
+        <input type="submit" value="Cadastrar" id="cadastrar" class="btn btn-primary">
         <input type="button" value="Terabyte" id="terabyte" class="btn btn-dark">
-
+        <input type="button" value="Alterar" id="alterar" class="btn btn-warning visually-hidden">
+        <input type="button" value="Cancelar" id="cancelar" class="btn btn-secondary visually-hidden">
+        <input type="button" value="Delete" id="remover" class="btn btn-danger visually-hidden">
 
     </form>
     <table class="table">
@@ -46,6 +51,7 @@
                 <th>Imagem</th>
                 <th>Descrição</th>
                 <th>Preço</th>
+                <th>Tipo</th>
                 <th>Selecionar</th>
             </tr>
         </thead>

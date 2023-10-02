@@ -35,3 +35,7 @@ img{
 td{
     vertical-align: middle;
 }
+
+.hidden {
+    display: none;
+}

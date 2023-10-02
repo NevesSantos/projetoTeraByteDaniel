@@ -48,6 +48,6 @@ function inserirProduto(produto) {
     novalinha.appendChild(colSelect);
 
     document.querySelector('tbody').appendChild(novalinha);
-
+    selecionar(btnSelect);
 }
 

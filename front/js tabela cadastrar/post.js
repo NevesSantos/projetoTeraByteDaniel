@@ -1,5 +1,7 @@
 document.querySelector('form').addEventListener('submit', function(e){
     e.preventDefault();
+    fica_em_alerta();
+    
     const dadosFormulario = new FormData(this);
     fetch("http://localhost:8080/", {
         method: "POST",
