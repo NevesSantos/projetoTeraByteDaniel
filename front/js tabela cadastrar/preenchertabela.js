@@ -26,7 +26,7 @@ function inserirProduto(produto) {
     colDesc.innerText = produto.description;
 
     colPreco.classList.add('col-preco')
-    colPreco.innerText = "R$ " + produto.preco;
+    colPreco.innerText = produto.preco;
 
     ColTipo.classList.add('col-tipo')
     if(produto.tipo === 1){
