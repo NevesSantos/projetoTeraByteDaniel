@@ -1,6 +1,5 @@
 btnAlterar.addEventListener('click', function () {    
     alterar();
-    form.reset();
     
 });
 
@@ -30,4 +29,5 @@ function alterarProduto(produto){
             } 
         }
     }
+    form.reset();
 }
