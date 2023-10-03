@@ -7,13 +7,6 @@ function btnHidden(){
     }
 };
 
-function limpaTudo(){
-    inputImg.value = "";
-    inputDesc.value = "";
-    inputPreco.value = "";
-};
-
-
 function fica_em_alerta(){
     if(inputImg.value.trim() === "" || inputDesc.value.trim() === "" || inputPreco.value.trim() === ""){
         alert("<3 Preenche tudo mano aff :D <3");
@@ -22,9 +15,7 @@ function fica_em_alerta(){
 
 };
 
-
 btnCancelar.addEventListener('click', function(){
-    limpaTudo();
     hidden = true;
     btnHidden();
 });

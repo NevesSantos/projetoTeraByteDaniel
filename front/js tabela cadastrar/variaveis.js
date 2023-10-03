@@ -5,6 +5,7 @@ let inputImg = document.getElementById("img");
 let inputDesc = document.getElementById("description");
 let inputPreco = document.getElementById("preco");
 
+let form = document.querySelector("form");
 
 let btnCadastrar = document.getElementById("cadastrar");
 let btnAlterar = document.getElementById("alterar");

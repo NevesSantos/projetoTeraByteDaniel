@@ -11,5 +11,5 @@ document.querySelector('form').addEventListener('submit', function(e){
         .then(produto => inserirProduto(produto))
         .catch(erro => console.log("Ocorreu um erro ao cadastrar produto: " + erro));
     };
-    limpaTudo();
+    form.reset();
 });

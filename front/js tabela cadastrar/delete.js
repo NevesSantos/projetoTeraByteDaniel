@@ -1,6 +1,6 @@
 btnRemover.addEventListener('click', function() {
     remover();
-    removerProduto();
+    form.reset();
     }, 
 );
 
@@ -11,8 +11,8 @@ fetch(local+inputId.value, {
     },
     method: 'DELETE',
     })
-    .then(resposta => resposta.json())
-    .then(produto => removerProduto(produto))
+    .then(resposta => resposta.json());
+    removerProduto();
 }
 
 function removerProduto(){
