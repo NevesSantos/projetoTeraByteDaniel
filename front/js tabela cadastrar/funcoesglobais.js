@@ -8,8 +8,8 @@ function btnHidden(){
 };
 
 function fica_em_alerta(){
-    if(inputImg.value.trim() === "" || inputDesc.value.trim() === "" || inputPreco.value.trim() === "" || inputMais.checked === false || inputLancamentos.checked === false){
-        alert("<3 Preenche tudo mano aff :D <3");
+    if(inputImg.files.length === 0 || inputDesc.value.trim() === "" || inputPreco.value.trim() === ""){
+        alert("༺🍃☞ <3 𝓟𝓻𝓮𝓮𝓷𝓬𝓱𝓮 𝓽𝓾𝓭𝓸 𝓶𝓪𝓷𝓸 𝓪𝓯𝓯 :𝓓 <3 ☪ツ");
         return true;
     }
 
