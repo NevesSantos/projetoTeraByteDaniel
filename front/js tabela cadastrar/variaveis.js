@@ -4,6 +4,8 @@ let inputId = document.getElementById("id");
 let inputImg = document.getElementById("img");
 let inputDesc = document.getElementById("description");
 let inputPreco = document.getElementById("preco");
+let inputMais = document.getElementById("masvendidos")
+let inputLancamentos = document.getElementById("lancamentos")
 
 let form = document.querySelector("form");
 

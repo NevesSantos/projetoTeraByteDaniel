@@ -8,7 +8,7 @@ function btnHidden(){
 };
 
 function fica_em_alerta(){
-    if(inputImg.value.trim() === "" || inputDesc.value.trim() === "" || inputPreco.value.trim() === ""){
+    if(inputImg.value.trim() === "" || inputDesc.value.trim() === "" || inputPreco.value.trim() === "" || inputMais.checked === false || inputLancamentos.checked === false){
         alert("<3 Preenche tudo mano aff :D <3");
         return true;
     }
