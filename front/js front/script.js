@@ -60,25 +60,25 @@ function inserirProduto(p) {
     text1.innerHTML = 'de <s>R$ ' + (p.preco).toFixed(2) + '</s> por:';
     divProduto.appendChild(text1);
 
-    var text3 = document.createElement("div");
-    text3.classList.add("p-a-vista");
-    text3.innerText = "R$ " + (p.preco * 0.90).toFixed(2);
-    divProduto.appendChild(text3);
-
     var text2 = document.createElement("div");
-    text2.classList.add("p-a-vista", "span-a-vista");
-    text2.innerText = "à vista";
+    text2.classList.add("p-a-vista");
+    text2.innerText = "R$ " + (p.preco * 0.90).toFixed(2);
     divProduto.appendChild(text2);
+
+    var text3 = document.createElement("div");
+    text3.classList.add("p-a-vista", "span-a-vista");
+    text3.innerText = "à vista";
+    divProduto.appendChild(text3);
 
     var text4 = document.createElement("div");
     text4.classList.add("p-parcelado");
     text4.innerHTML = '12x de <span class="vermelho">R$ ' + (p.preco / 12).toFixed(2) + '</span>';
     divProduto.appendChild(text4);
 
-    var text6 = document.createElement("div");
-    text6.classList.add("p-parcelado");
-    text6.innerText = "sem juros no cartão";
-    divProduto.appendChild(text6);
+    var text5 = document.createElement("div");
+    text5.classList.add("p-parcelado");
+    text5.innerText = "sem juros no cartão";
+    divProduto.appendChild(text5);
     return divProduto;
 }
 
