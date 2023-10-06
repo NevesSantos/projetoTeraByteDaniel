@@ -11,7 +11,7 @@ function alterar() {
     })
     .then(resposta => resposta.json())
     .then(produto => alterarProduto(produto))
-    .catch(erro => console.log("Ocorreu um erro ao cadastrar produto: " + erro));
+    .catch(erro => console.log("༺🍃☞ 𝓞𝓬𝓸𝓻𝓻𝓮𝓾 𝓾𝓶 𝓮𝓻𝓻𝓸 𝓪𝓸 𝓪𝓵𝓽𝓮𝓻𝓪𝓻 𝓹𝓻𝓸𝓭𝓾𝓽𝓸: ☪ツ " + erro));
 }
 
 function alterarProduto(produto){
