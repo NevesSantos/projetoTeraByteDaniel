@@ -13,7 +13,6 @@ function remover() {
             },
             method: 'DELETE',
         })
-            .then(resposta => resposta.json());
         removerProduto();
     }
 }
